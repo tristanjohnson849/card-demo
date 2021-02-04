@@ -7,6 +7,6 @@ public class MenuFunctions : MonoBehaviour
 {
     public void AccessMainMenu ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 }
