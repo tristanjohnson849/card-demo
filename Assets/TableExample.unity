@@ -376,16 +376,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b816fa67420f0af45b660e30cbe74727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 9095620842917086643, guid: 643bc69fda35dc14f9727533fcc4a398,
+  playerPrefab: {fileID: 8272114840045307152, guid: 472dbafa0a5a6d94f8b05a7baeabb96d,
     type: 3}
   seatPositions:
-  - {x: -700, y: 0}
-  - {x: -600, y: -200}
-  - {x: -350, y: -300}
-  - {x: 0, y: -300}
-  - {x: 350, y: -300}
-  - {x: 600, y: -200}
-  - {x: 700, y: 0}
+  - {x: -650, y: 0}
+  - {x: -500, y: -150}
+  - {x: -300, y: -250}
+  - {x: 0, y: -250}
+  - {x: 300, y: -250}
+  - {x: 500, y: -150}
+  - {x: 650, y: 0}
   players: []
 --- !u!1 &796461197
 GameObject:
@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 796461201}
   - component: {fileID: 796461200}
   - component: {fileID: 796461199}
+  - component: {fileID: 796461202}
   m_Layer: 5
   m_Name: RemovePlayerButton
   m_TagString: Untagged
@@ -478,7 +479,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 796461202}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -490,6 +491,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796461197}
   m_CullTransparentMesh: 0
+--- !u!114 &796461202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796461197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1210491356
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +610,7 @@ GameObject:
   - component: {fileID: 1262315659}
   - component: {fileID: 1262315658}
   - component: {fileID: 1262315657}
+  - component: {fileID: 1262315660}
   m_Layer: 5
   m_Name: AddPlayerButton
   m_TagString: Untagged
@@ -659,7 +690,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1262315660}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -671,6 +702,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262315655}
   m_CullTransparentMesh: 0
+--- !u!114 &1262315660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262315655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1365416667
 GameObject:
   m_ObjectHideFlags: 0
