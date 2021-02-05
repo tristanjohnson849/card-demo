@@ -7,9 +7,5 @@ public class RemovePlayerButton : MonoBehaviour, IPointerClickHandler
 {
     public GameTable gameTable;
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log("Received Remove event");
-        gameTable.RemovePlayer();
-    }
+    public void OnPointerClick(PointerEventData eventData) => gameTable.RemovePlayer();
 }

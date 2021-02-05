@@ -7,9 +7,5 @@ public class AddPlayerButton : MonoBehaviour, IPointerClickHandler
 {
     public GameTable gameTable;
 
-    public void OnPointerClick(PointerEventData eventData) 
-    {
-        Debug.Log("Received Add event");
-        gameTable.AddPlayer();
-    }
+    public void OnPointerClick(PointerEventData eventData) => gameTable.AddPlayer();
 }
